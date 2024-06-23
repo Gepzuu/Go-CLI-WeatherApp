@@ -36,3 +36,13 @@ type Weather struct {
 	} `json:"forecast"`
 }
 
+func main() {
+	q := "Iasi"
+	if len(os.Args) >= 2 {
+		q = os.Args[1]
+	}
+	res, err := http.Get("http://api.weatherapi.com/v1/forecast.json?key=aa50cc9825904adb811112917242306&q=" + q + "&days=1&aqi=no&alerts=no")
+	if err != nil {
+		panic(err)
+	}
+	defer res.Body.Close()

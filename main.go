@@ -81,3 +81,19 @@ func main() {
 		if date.Before(today) {
 			continue
 		}
+
+		message := fmt.Sprintf(
+			"%s - %.0f°C, %.0f%% chance of rain, %s",
+			date.Format("15:04"),
+			hour.TempC,
+			hour.ChanceOfRain,
+			hour.Condition.Text,
+		)
+
+		if hour.ChanceOfRain < 40 {
+			fmt.Println(message)
+		} else {
+			color.Yellow(message)
+		}
+	}
+}

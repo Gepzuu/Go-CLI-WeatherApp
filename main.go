@@ -35,3 +35,4 @@ type Weather struct {
 		} `json:"forecastday"`
 	} `json:"forecast"`
 }
+

@@ -61,3 +61,12 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+
+	location, current, hours := weather.Location, weather.Current, weather.Forecast.Forecastday[0].Hour
+	fmt.Printf(
+		"%s, %s: %.0fC, %s\n",
+		location.Name,
+		location.Country,
+		current.TempC,
+		current.Condition.Text,
+	)

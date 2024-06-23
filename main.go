@@ -70,3 +70,14 @@ func main() {
 		current.TempC,
 		current.Condition.Text,
 	)
+
+	for _, hour := range hours {
+		date := time.Unix(hour.TimeEpoch, 0)
+
+		// Get the start of the current day
+		today := time.Now().Truncate(24 * time.Hour)
+
+		// Skip past hours that are in the past
+		if date.Before(today) {
+			continue
+		}

@@ -1,15 +1,51 @@
 <div align="center">
-This is a simple CLI weather application in Go that fetches and displays current weather information using the WeatherAPI.
+  <h1>Go Weather App CLI</h1>
+  <p>This is a simple CLI weather application in Go that fetches and displays current weather information using the WeatherAPI.</p>
 </div><br>
 
-# Output
-<div align="center">
-    <img src="https://github.com/Gepzuu/Go-CLI-WeatherApp/assets/92858147/91c09a09-837a-4e8d-9b58-4b902a77a5b2" alt="Output2"><br><br>
-    <img src="https://github.com/Gepzuu/Go-CLI-WeatherApp/assets/92858147/a90bba8a-cb3e-4cb3-bad0-31f26bfe8164" alt="Output3"><br><br>
-    <img src="https://github.com/Gepzuu/Go-CLI-WeatherApp/assets/92858147/19320740-8920-421e-ae5a-d016e508f971" alt="Output">
-</div>
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+
+## Features
+- Fetches current weather information for any location.
+- Displays temperature, humidity, wind speed, and weather conditions.
+- Supports multiple units (Celsius and Fahrenheit).
+- Easy-to-use command-line interface.
+
+## Installation
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/Gepzuu/go-weather-app.git
+   cd go-weather-app
+Install dependencies:
+Make sure you have Go installed. Then run:
+sh
+Copy code
+go mod tidy
+Usage
+To get the current weather information for a specific location, run:
+
+sh
+Copy code
+go run main.go -location="YourCity"
+Replace "YourCity" with the name of the city you want to get the weather for.
+
+Configuration
+To use this application, you need to get an API key from WeatherAPI. Once you have the key, you can set it as an environment variable:
+
+sh
+Copy code
+export WEATHER_API_KEY="your_api_key_here"
+Dependencies
+Go Modules: Dependency management.
+WeatherAPI: Used for fetching weather data.
+Additional dependencies listed in go.mod.
 
 
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-# Credits:
-WeatherAPI (https://www.weatherapi.com/): Used for fetching weather data.
+# Credits
+WeatherAPI: Used for fetching weather data.<br>
+Go Modules: For dependency management.

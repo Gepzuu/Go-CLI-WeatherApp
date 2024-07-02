@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Go Weather App CLI</h1>
-  <p>This is a simple CLI weather application in Go that fetches and displays current weather information using the WeatherAPI.</p>
+<p>This is a simple Command Line Interface (CLI) real-time weather application in Go that fetches and displays current weather information using the WeatherAPI.</p>
 </div><br>
 
 ## Table of Contents

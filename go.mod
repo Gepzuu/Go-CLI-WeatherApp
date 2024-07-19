@@ -1,6 +1,6 @@
 module druc/cli
 
-go 1.22.3
+go 1.13
 
 require (
 	github.com/fatih/color v1.17.0 // indirect
